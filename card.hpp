@@ -3,9 +3,15 @@
 #define CARD_H
 
 class Card {
+
+public:
+	Card();
+	Card(int rank, Suit suit);
+	enum Suit { spades, hearts, diamonds, clubs };
 private:
 	int rank;
-	int suit;
+	Suit suit;
+
 
 };
 
